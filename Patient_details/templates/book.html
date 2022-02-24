@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Book Appoinment</title>
+    </head>
+
+    <body>
+        <h1>Book An Appoinment</h1>
+        <form action="" method="POST">
+            <fieldset>
+                <legend>BOOK</legend>
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </fieldset>
+        </form>
+    </body>
+</html>
